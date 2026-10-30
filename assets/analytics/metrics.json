@@ -1,14 +1,14 @@
 {
   "username": "nikhilmurugan",
-  "generated_at_utc": "2026-10-30T17:15:45.408073+00:00",
+  "generated_at_utc": "2026-10-30T17:35:46.858657+00:00",
   "scope": "public data",
   "repository_scope": "owned public non-fork repositories",
   "repository_count": 8,
   "stars": 3,
   "forks": 0,
   "followers": 0,
-  "contributions_last_365_days": 49,
-  "commits_last_365_days": 40,
+  "contributions_last_365_days": 52,
+  "commits_last_365_days": 43,
   "issues_last_365_days": 0,
   "pull_requests_last_365_days": 0,
   "pull_request_reviews_last_365_days": 0,
@@ -29,7 +29,7 @@
     },
     {
       "name": "Python",
-      "bytes": 185851
+      "bytes": 191250
     },
     {
       "name": "HTML",

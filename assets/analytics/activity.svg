@@ -1,2 +1,242 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="270" viewBox="0 0 760 270" role="img" aria-label="Monthly Contribution Activity"><defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#55C2FF"/><stop offset="55%" stop-color="#A78BFA"/><stop offset="100%" stop-color="#F08BEA"/></linearGradient><linearGradient id="panel"><stop offset="0%" stop-color="#1A2945"/><stop offset="100%" stop-color="#141D33"/></linearGradient></defs><rect width="100%" height="100%" rx="18" fill="#0B1020"/><text x="26" y="38" fill="#E8EEFF" font-size="19" font-family="Arial,sans-serif" font-weight="700">Monthly Contribution Activity</text><text x="26" y="60" fill="#9AAAC4" font-size="11" font-family="Arial,sans-serif">Contribution calendar counts grouped by month</text><rect x="30" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="47" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">11</text><text x="47" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="90" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="107" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">12</text><text x="107" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="150" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="167" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">01</text><text x="167" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="210" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="227" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">02</text><text x="227" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="270" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="287" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">03</text><text x="287" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="330" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="347" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">04</text><text x="347" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="390" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="407" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">05</text><text x="407" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="450" y="195.0" width="34" height="0.0" rx="5" fill="url(#accent)"/><text x="467" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">06</text><text x="467" y="187.0" text-anchor="middle" fill="#E8EEFF" font-size="9">0</text><rect x="510" y="192.2" width="34" height="2.8" rx="5" fill="url(#accent)"/><text x="527" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">07</text><text x="527" y="184.2" text-anchor="middle" fill="#E8EEFF" font-size="9">1</text><rect x="570" y="189.4" width="34" height="5.6" rx="5" fill="url(#accent)"/><text x="587" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">08</text><text x="587" y="181.4" text-anchor="middle" fill="#E8EEFF" font-size="9">2</text><rect x="630" y="183.8" width="34" height="11.2" rx="5" fill="url(#accent)"/><text x="647" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">09</text><text x="647" y="175.8" text-anchor="middle" fill="#E8EEFF" font-size="9">4</text><rect x="690" y="77.0" width="34" height="118.0" rx="5" fill="url(#accent)"/><text x="707" y="216" text-anchor="middle" fill="#9AAAC4" font-size="9">10</text><text x="707" y="83.0" text-anchor="middle" fill="#E8EEFF" font-size="9">42</text>
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1240" height="290"
+    viewBox="0 0 1240 290"
+    role="img" aria-label="Monthly Contribution Activity">
+    <defs>
+      <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#38BDF8"/>
+        <stop offset="52%" stop-color="#818CF8"/>
+        <stop offset="100%" stop-color="#E879F9"/>
+      </linearGradient>
+      <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#142440"/>
+        <stop offset="100%" stop-color="#0D172A"/>
+      </linearGradient>
+      <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#38BDF8"/>
+        <stop offset="100%" stop-color="#A78BFA"/>
+      </linearGradient>
+    </defs>
+
+    <rect width="100%" height="100%" rx="16" fill="#080F1D"/>
+    <rect x="1" y="1" width="1238" height="288"
+          rx="15" fill="none" stroke="#263B60" stroke-width="1"/>
+
+    <text x="26" y="38" fill="#F1F5FF"
+          font-size="21" font-family="Arial,sans-serif"
+          font-weight="700">Monthly Contribution Activity</text>
+
+    <text x="26" y="61" fill="#A6B5D0"
+          font-size="11" font-family="Arial,sans-serif">
+          Contribution calendar counts grouped by month · Recent 12 months
+    </text>
+    
+    <line x1="42" y1="218"
+          x2="1198" y2="218"
+          stroke="#263B60" stroke-width="1"/>
+    
+        <rect x="66.2" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="90.2" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="90.2" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Nov
+        </text>
+        
+        <rect x="162.5" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="186.5" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="186.5" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Dec
+        </text>
+        
+        <rect x="258.8" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="282.8" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="282.8" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Jan
+        </text>
+        
+        <rect x="355.2" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="379.2" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="379.2" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Feb
+        </text>
+        
+        <rect x="451.5" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="475.5" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="475.5" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Mar
+        </text>
+        
+        <rect x="547.8" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="571.8" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="571.8" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Apr
+        </text>
+        
+        <rect x="644.2" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="668.2" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="668.2" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              May
+        </text>
+        
+        <rect x="740.5" y="218.0"
+              width="48" height="2.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="764.5" y="208.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              0
+        </text>
+
+        <text x="764.5" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Jun
+        </text>
+        
+        <rect x="836.8" y="215.2"
+              width="48" height="2.8"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="860.8" y="205.2"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              1
+        </text>
+
+        <text x="860.8" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Jul
+        </text>
+        
+        <rect x="933.2" y="212.4"
+              width="48" height="5.6"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="957.2" y="202.4"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              2
+        </text>
+
+        <text x="957.2" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Aug
+        </text>
+        
+        <rect x="1029.5" y="206.7"
+              width="48" height="11.3"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="1053.5" y="196.7"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              4
+        </text>
+
+        <text x="1053.5" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Sep
+        </text>
+        
+        <rect x="1125.8" y="91.0"
+              width="48" height="127.0"
+              rx="7" fill="url(#accent)"/>
+
+        <text x="1149.8" y="81.0"
+              text-anchor="middle" fill="#F1F5FF"
+              font-size="11" font-family="Arial,sans-serif">
+              45
+        </text>
+
+        <text x="1149.8" y="244"
+              text-anchor="middle" fill="#A6B5D0"
+              font-size="11" font-family="Arial,sans-serif">
+              Oct
+        </text>
+        
+    <text x="1190" y="48" text-anchor="end"
+          fill="#A6B5D0" font-size="11"
+          font-family="Arial,sans-serif">
+          Total Contributions
+    </text>
+
+    <text x="1190" y="76" text-anchor="end"
+          fill="#38BDF8" font-size="25"
+          font-weight="700" font-family="Arial,sans-serif">
+          52
+    </text>
+    
 </svg>

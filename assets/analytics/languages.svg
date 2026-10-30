@@ -1,2 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-label="Language Distribution"><defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#55C2FF"/><stop offset="55%" stop-color="#A78BFA"/><stop offset="100%" stop-color="#F08BEA"/></linearGradient><linearGradient id="panel"><stop offset="0%" stop-color="#1A2945"/><stop offset="100%" stop-color="#141D33"/></linearGradient></defs><rect width="100%" height="100%" rx="18" fill="#0B1020"/><text x="26" y="38" fill="#E8EEFF" font-size="19" font-family="Arial,sans-serif" font-weight="700">Language Distribution</text><text x="26" y="60" fill="#9AAAC4" font-size="11" font-family="Arial,sans-serif">Language bytes across owned public, non-fork repositories</text><text x="30" y="100" fill="#E8EEFF" font-size="12">JavaScript</text><rect x="190" y="87" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="87" width="194.87" height="10" rx="5" fill="#55C2FF"/><text x="710" y="100" text-anchor="end" fill="#55C2FF" font-size="12">45.3%</text><text x="30" y="131" fill="#E8EEFF" font-size="12">PHP</text><rect x="190" y="118" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="118" width="86.43" height="10" rx="5" fill="#A78BFA"/><text x="710" y="131" text-anchor="end" fill="#A78BFA" font-size="12">20.1%</text><text x="30" y="162" fill="#E8EEFF" font-size="12">TypeScript</text><rect x="190" y="149" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="149" width="78.51" height="10" rx="5" fill="#F08BEA"/><text x="710" y="162" text-anchor="end" fill="#F08BEA" font-size="12">18.3%</text><text x="30" y="193" fill="#E8EEFF" font-size="12">Python</text><rect x="190" y="180" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="180" width="36.29" height="10" rx="5" fill="#53D6A5"/><text x="710" y="193" text-anchor="end" fill="#53D6A5" font-size="12">8.4%</text><text x="30" y="224" fill="#E8EEFF" font-size="12">HTML</text><rect x="190" y="211" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="211" width="17.51" height="10" rx="5" fill="#FFB86B"/><text x="710" y="224" text-anchor="end" fill="#FFB86B" font-size="12">4.1%</text><text x="30" y="255" fill="#E8EEFF" font-size="12">CSS</text><rect x="190" y="242" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="242" width="12.33" height="10" rx="5" fill="#FACC15"/><text x="710" y="255" text-anchor="end" fill="#FACC15" font-size="12">2.9%</text><text x="30" y="286" fill="#E8EEFF" font-size="12">Java</text><rect x="190" y="273" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="273" width="3.53" height="10" rx="5" fill="#55C2FF"/><text x="710" y="286" text-anchor="end" fill="#55C2FF" font-size="12">0.8%</text><text x="30" y="317" fill="#E8EEFF" font-size="12">Hack</text><rect x="190" y="304" width="430" height="10" rx="5" fill="#26334A"/><rect x="190" y="304" width="0.42" height="10" rx="5" fill="#A78BFA"/><text x="710" y="317" text-anchor="end" fill="#A78BFA" font-size="12">0.1%</text>
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="620" height="280"
+    viewBox="0 0 620 280"
+    role="img" aria-label="Language Distribution">
+    <defs>
+      <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#38BDF8"/>
+        <stop offset="52%" stop-color="#818CF8"/>
+        <stop offset="100%" stop-color="#E879F9"/>
+      </linearGradient>
+      <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#142440"/>
+        <stop offset="100%" stop-color="#0D172A"/>
+      </linearGradient>
+      <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#38BDF8"/>
+        <stop offset="100%" stop-color="#A78BFA"/>
+      </linearGradient>
+    </defs>
+
+    <rect width="100%" height="100%" rx="16" fill="#080F1D"/>
+    <rect x="1" y="1" width="618" height="278"
+          rx="15" fill="none" stroke="#263B60" stroke-width="1"/>
+
+    <text x="26" y="38" fill="#F1F5FF"
+          font-size="21" font-family="Arial,sans-serif"
+          font-weight="700">Language Distribution</text>
+
+    <text x="26" y="61" fill="#A6B5D0"
+          font-size="11" font-family="Arial,sans-serif">
+          Programming languages across owned public repositories
+    </text>
+    
+            <text x="26" y="98" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  JavaScript
+            </text>
+
+            <rect x="175" y="87"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="87"
+                  width="160.49" height="9"
+                  rx="5" fill="#38BDF8"/>
+
+            <text x="585" y="98" text-anchor="end"
+                  fill="#38BDF8" font-size="11"
+                  font-family="Arial,sans-serif">
+                  45.2%
+            </text>
+            
+            <text x="26" y="120" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  PHP
+            </text>
+
+            <rect x="175" y="109"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="109"
+                  width="71.18" height="9"
+                  rx="5" fill="#A78BFA"/>
+
+            <text x="585" y="120" text-anchor="end"
+                  fill="#A78BFA" font-size="11"
+                  font-family="Arial,sans-serif">
+                  20.1%
+            </text>
+            
+            <text x="26" y="142" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  TypeScript
+            </text>
+
+            <rect x="175" y="131"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="131"
+                  width="64.66" height="9"
+                  rx="5" fill="#E879F9"/>
+
+            <text x="585" y="142" text-anchor="end"
+                  fill="#E879F9" font-size="11"
+                  font-family="Arial,sans-serif">
+                  18.2%
+            </text>
+            
+            <text x="26" y="164" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  Python
+            </text>
+
+            <rect x="175" y="153"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="153"
+                  width="30.76" height="9"
+                  rx="5" fill="#34D399"/>
+
+            <text x="585" y="164" text-anchor="end"
+                  fill="#34D399" font-size="11"
+                  font-family="Arial,sans-serif">
+                  8.7%
+            </text>
+            
+            <text x="26" y="186" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  HTML
+            </text>
+
+            <rect x="175" y="175"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="175"
+                  width="14.42" height="9"
+                  rx="5" fill="#FBBF24"/>
+
+            <text x="585" y="186" text-anchor="end"
+                  fill="#FBBF24" font-size="11"
+                  font-family="Arial,sans-serif">
+                  4.1%
+            </text>
+            
+            <text x="26" y="208" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  CSS
+            </text>
+
+            <rect x="175" y="197"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="197"
+                  width="10.15" height="9"
+                  rx="5" fill="#FB7185"/>
+
+            <text x="585" y="208" text-anchor="end"
+                  fill="#FB7185" font-size="11"
+                  font-family="Arial,sans-serif">
+                  2.9%
+            </text>
+            
+            <text x="26" y="230" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  Java
+            </text>
+
+            <rect x="175" y="219"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="219"
+                  width="2.90" height="9"
+                  rx="5" fill="#60A5FA"/>
+
+            <text x="585" y="230" text-anchor="end"
+                  fill="#60A5FA" font-size="11"
+                  font-family="Arial,sans-serif">
+                  0.8%
+            </text>
+            
+            <text x="26" y="252" fill="#F1F5FF"
+                  font-size="12" font-family="Arial,sans-serif">
+                  Hack
+            </text>
+
+            <rect x="175" y="241"
+                  width="355" height="9"
+                  rx="5" fill="#263650"/>
+
+            <rect x="175" y="241"
+                  width="0.35" height="9"
+                  rx="5" fill="#2DD4BF"/>
+
+            <text x="585" y="252" text-anchor="end"
+                  fill="#2DD4BF" font-size="11"
+                  font-family="Arial,sans-serif">
+                  0.1%
+            </text>
+            
 </svg>
