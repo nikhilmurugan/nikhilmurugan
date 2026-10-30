@@ -1,18 +1,14 @@
-
-
 name: Update GitHub Analytics
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "17 3 * * *"
-
-  workflow_dispatch:
-
   push:
     branches:
       - main
     paths:
-      - "scripts/**"
+      - "scripts/generate_analytics.py"
       - ".github/workflows/github-analytics.yml"
 
 permissions:
@@ -25,7 +21,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -35,21 +31,38 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate analytics
+      - name: Verify analytics secret exists
+        env:
+          GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
+        run: |
+          if [ -z "$GH_ANALYTICS_TOKEN" ]; then
+            echo "ERROR: GH_ANALYTICS_TOKEN secret is missing or empty."
+            exit 1
+          fi
+          echo "GH_ANALYTICS_TOKEN is present. Token value will not be displayed."
+
+      - name: Generate and validate analytics
         env:
           GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
         run: python scripts/generate_analytics.py
 
-      - name: Commit updated analytics
+      - name: Show generated file sizes
+        run: |
+          ls -lh assets/analytics/
+          test -s assets/analytics/overview.svg
+          test -s assets/analytics/languages.svg
+          test -s assets/analytics/contributions.svg
+          test -s assets/analytics/activity.svg
+          test -s assets/analytics/metrics.json
+
+      - name: Commit and push analytics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add assets/analytics/
-
           if git diff --cached --quiet; then
-            echo "Analytics unchanged. No commit required."
+            echo "Analytics files are already up to date."
           else
             git commit -m "chore: update GitHub analytics"
-            git push
+            git push origin HEAD:main
           fi
