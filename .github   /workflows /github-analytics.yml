@@ -4,12 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 3 * * *"
-  push:
-    branches:
-      - main
-    paths:
-      - "scripts/generate_analytics.py"
-      - ".github/workflows/github-analytics.yml"
 
 permissions:
   contents: write
@@ -21,42 +15,52 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Verify analytics secret exists
+      - name: Verify analytics secret
         env:
           GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
         run: |
           if [ -z "$GH_ANALYTICS_TOKEN" ]; then
-            echo "ERROR: GH_ANALYTICS_TOKEN secret is missing or empty."
+            echo "::error::GH_ANALYTICS_TOKEN repository secret is missing or empty."
             exit 1
           fi
-          echo "GH_ANALYTICS_TOKEN is present. Token value will not be displayed."
+          echo "Analytics token secret is present."
 
-      - name: Generate and validate analytics
+      - name: Generate analytics
         env:
           GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
         run: python scripts/generate_analytics.py
 
-      - name: Show generated file sizes
+      - name: Validate generated files
         run: |
-          ls -lh assets/analytics/
-          test -s assets/analytics/overview.svg
-          test -s assets/analytics/languages.svg
-          test -s assets/analytics/contributions.svg
-          test -s assets/analytics/activity.svg
-          test -s assets/analytics/metrics.json
+          set -e
+          for file in \
+            assets/analytics/overview.svg \
+            assets/analytics/languages.svg \
+            assets/analytics/contributions.svg \
+            assets/analytics/activity.svg \
+            assets/analytics/metrics.json
+          do
+            test -s "$file" || { echo "::error::Missing or empty file: $file"; exit 1; }
+          done
+          python -m json.tool assets/analytics/metrics.json > /dev/null
+          grep -q '<svg' assets/analytics/overview.svg
+          grep -q '</svg>' assets/analytics/overview.svg
+          echo "All analytics files exist and are non-empty."
 
       - name: Commit and push analytics
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/analytics/
