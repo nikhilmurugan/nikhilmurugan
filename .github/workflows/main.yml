@@ -3,6 +3,14 @@ name: Update GitHub Analytics
 
 on:
   workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/main.yml"
+
   schedule:
     - cron: "17 3 * * *"
 
@@ -15,6 +23,7 @@ concurrency:
 
 jobs:
   generate:
+    name: Generate GitHub Analytics
     runs-on: ubuntu-latest
 
     steps:
@@ -23,27 +32,27 @@ jobs:
         with:
           ref: main
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Verify token
+      - name: Check analytics token
         env:
           GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
         run: |
           if [ -z "$GH_ANALYTICS_TOKEN" ]; then
-            echo "::error::GH_ANALYTICS_TOKEN secret is missing"
+            echo "::error::GH_ANALYTICS_TOKEN secret is missing."
             exit 1
           fi
-          echo "Token secret is configured."
+          echo "Analytics token is configured."
 
       - name: Generate analytics
         env:
           GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
         run: python scripts/generate_analytics.py
 
-      - name: Validate analytics files
+      - name: Validate generated files
         run: |
           set -e
 
@@ -62,6 +71,8 @@ jobs:
 
       - name: Commit and push analytics
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
