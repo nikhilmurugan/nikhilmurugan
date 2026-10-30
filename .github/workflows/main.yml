@@ -1,1 +1,75 @@
 
+name: Update GitHub Analytics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-analytics
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify token
+        env:
+          GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
+        run: |
+          if [ -z "$GH_ANALYTICS_TOKEN" ]; then
+            echo "::error::GH_ANALYTICS_TOKEN secret is missing"
+            exit 1
+          fi
+          echo "Token secret is configured."
+
+      - name: Generate analytics
+        env:
+          GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
+        run: python scripts/generate_analytics.py
+
+      - name: Validate analytics files
+        run: |
+          set -e
+
+          for file in \
+            assets/analytics/overview.svg \
+            assets/analytics/languages.svg \
+            assets/analytics/contributions.svg \
+            assets/analytics/activity.svg \
+            assets/analytics/metrics.json
+          do
+            test -s "$file"
+            echo "Verified: $file"
+          done
+
+          python -m json.tool assets/analytics/metrics.json > /dev/null
+
+      - name: Commit and push analytics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/analytics/
+
+          if git diff --cached --quiet; then
+            echo "Analytics already up to date."
+          else
+            git commit -m "Update GitHub analytics"
+            git push origin HEAD:main
+          fi
