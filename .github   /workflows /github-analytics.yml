@@ -1,1 +1,55 @@
 
+
+name: Update GitHub Analytics
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/github-analytics.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-analytics
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate analytics
+        env:
+          GH_ANALYTICS_TOKEN: ${{ secrets.GH_ANALYTICS_TOKEN }}
+        run: python scripts/generate_analytics.py
+
+      - name: Commit updated analytics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/analytics/
+
+          if git diff --cached --quiet; then
+            echo "Analytics unchanged. No commit required."
+          else
+            git commit -m "chore: update GitHub analytics"
+            git push
+          fi
