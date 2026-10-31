@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Nikhil Murugan D P — Software Engineering, AI, Cloud and Full Stack"/>
+<img src="https://raw.githubusercontent.com/nikhilmurugan/nikhilmurugan/main/assets/header.svg" width="100%" alt="Nikhil Murugan D P — Software Engineering, AI, Cloud and Full Stack"/>
 
 <br/>
 
