@@ -1,1 +1,83 @@
 
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050B19"/>
+      <stop offset=".5" stop-color="#14245B"/>
+      <stop offset="1" stop-color="#42105F"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset=".55" stop-color="#A5B4FC"/>
+      <stop offset="1" stop-color="#E879F9"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#8198FF" stroke-opacity=".10"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+
+  <g fill="none" stroke="#5795FF" stroke-width="2" opacity=".65">
+    <path d="M0 55H95L130 90H235"/>
+    <path d="M0 85H75L115 125H190"/>
+    <path d="M0 245H90L130 205H220"/>
+    <path d="M1200 50H1100L1060 90H970"/>
+    <path d="M1200 85H1125L1085 125H1010"/>
+    <path d="M1200 245H1110L1070 205H980"/>
+    <path d="M865 0V48L905 88V115"/>
+    <path d="M920 300V260L960 220V195"/>
+  </g>
+
+  <g fill="#67E8F9">
+    <circle cx="95" cy="55" r="4"/>
+    <circle cx="235" cy="90" r="4"/>
+    <circle cx="90" cy="245" r="4"/>
+    <circle cx="1100" cy="50" r="4"/>
+    <circle cx="970" cy="90" r="4"/>
+    <circle cx="1110" cy="245" r="4"/>
+  </g>
+
+  <g fill="none" stroke="#A78BFA" stroke-width="1.5" opacity=".55">
+    <circle cx="1035" cy="150" r="105"/>
+    <circle cx="1035" cy="150" r="78" stroke-dasharray="5 8"/>
+    <circle cx="1035" cy="150" r="50"/>
+    <path d="M1035 45V255M930 150H1140M961 76L1109 224M1109 76L961 224"/>
+  </g>
+
+  <g fill="none" stroke="#38BDF8" stroke-width="3">
+    <path d="M1017 136L999 150L1017 164"/>
+    <path d="M1053 136L1071 150L1053 164"/>
+    <path d="M1045 126L1025 174"/>
+  </g>
+
+  <rect x="55" y="48" width="250" height="29" rx="14"
+        fill="#172554" stroke="#536DCE"/>
+  <circle cx="74" cy="62.5" r="5" fill="#34D399"/>
+  <text x="90" y="67" fill="#C7D2FE" font-size="12"
+        font-family="Arial,sans-serif" letter-spacing="1.5">
+    SOFTWARE DEVELOPER
+  </text>
+
+  <text x="55" y="145" fill="url(#title)" font-size="57"
+        font-weight="700" font-family="Arial,sans-serif">
+    Nikhil Murugan D P
+  </text>
+
+  <text x="59" y="184" fill="#E0E7FF" font-size="17"
+        font-weight="600" font-family="Arial,sans-serif"
+        letter-spacing="1.4">
+    SOFTWARE ENGINEERING  |  AI  |  CLOUD  |  FULL STACK
+  </text>
+
+  <path d="M58 211H720" stroke="#6478D8" stroke-width="2" opacity=".8"/>
+  <text x="59" y="242" fill="#A5B4FC" font-size="13"
+        font-family="Arial,sans-serif" letter-spacing="2">
+    DESIGNING · DEVELOPING · INNOVATING
+  </text>
+
+  <rect x="1" y="1" width="1198" height="298" rx="17"
+        fill="none" stroke="#6478D8" stroke-opacity=".75"/>
+</svg>
