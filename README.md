@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Nikhil Murugan D P — Software Engineering, AI, Cloud and Full Stack"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050B1B,35:142B68,70:312E81,100:701A75&height=240&section=header&text=Nikhil%20Murugan%20D%20P&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=SOFTWARE%20ENGINEERING%20%7C%20AI%20%7C%20CLOUD%20%7C%20FULL%20STACK&descSize=14&descAlignY=58&animation=fadeIn" width="100%" alt="Nikhil Murugan D P — Software Engineering, AI, Cloud and Full Stack"/>
 
 <br/>
 
@@ -72,9 +72,7 @@ MCA student at **VIT Vellore**, interested in software engineering, artificial i
 
 ## 📊 GitHub Analytics
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<div align="center">
 
 <img src="assets/analytics/overview.svg" width="100%" alt="GitHub Overview"/>
 
@@ -82,21 +80,15 @@ MCA student at **VIT Vellore**, interested in software engineering, artificial i
 
 <img src="assets/analytics/contributions.svg" width="100%" alt="Contribution Summary"/>
 
-</td>
-<td width="50%" valign="top">
+<br/><br/>
 
 <img src="assets/analytics/languages.svg" width="100%" alt="Language Distribution"/>
 
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
+<br/><br/>
 
 <img src="assets/analytics/activity.svg" width="100%" alt="Monthly Contribution Activity"/>
 
-</td>
-</tr>
-</table>
+</div>
 
 ## 🚀 Explore My Work
 
