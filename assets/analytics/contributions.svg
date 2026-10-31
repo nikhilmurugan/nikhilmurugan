@@ -45,7 +45,7 @@
     <text x="39" y="144" fill="#38BDF8"
           font-size="28" font-weight="700"
           font-family="Arial,sans-serif">
-          52
+          60
     </text>
     
     <rect x="165" y="78" width="133" height="82"
@@ -62,7 +62,7 @@
     <text x="182" y="144" fill="#34D399"
           font-size="28" font-weight="700"
           font-family="Arial,sans-serif">
-          1
+          2
     </text>
     
     <rect x="308" y="78" width="133" height="82"
@@ -79,7 +79,7 @@
     <text x="325" y="144" fill="#A78BFA"
           font-size="28" font-weight="700"
           font-family="Arial,sans-serif">
-          1
+          2
     </text>
     
     <rect x="451" y="78" width="133" height="82"
@@ -96,7 +96,7 @@
     <text x="468" y="144" fill="#E879F9"
           font-size="28" font-weight="700"
           font-family="Arial,sans-serif">
-          9
+          10
     </text>
     
 </svg>

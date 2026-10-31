@@ -163,11 +163,11 @@
               Jun
         </text>
         
-        <rect x="836.8" y="215.2"
-              width="48" height="2.8"
+        <rect x="836.8" y="215.6"
+              width="48" height="2.4"
               rx="7" fill="url(#accent)"/>
 
-        <text x="860.8" y="205.2"
+        <text x="860.8" y="205.6"
               text-anchor="middle" fill="#F1F5FF"
               font-size="11" font-family="Arial,sans-serif">
               1
@@ -179,11 +179,11 @@
               Jul
         </text>
         
-        <rect x="933.2" y="212.4"
-              width="48" height="5.6"
+        <rect x="933.2" y="213.2"
+              width="48" height="4.8"
               rx="7" fill="url(#accent)"/>
 
-        <text x="957.2" y="202.4"
+        <text x="957.2" y="203.2"
               text-anchor="middle" fill="#F1F5FF"
               font-size="11" font-family="Arial,sans-serif">
               2
@@ -195,11 +195,11 @@
               Aug
         </text>
         
-        <rect x="1029.5" y="206.7"
-              width="48" height="11.3"
+        <rect x="1029.5" y="208.4"
+              width="48" height="9.6"
               rx="7" fill="url(#accent)"/>
 
-        <text x="1053.5" y="196.7"
+        <text x="1053.5" y="198.4"
               text-anchor="middle" fill="#F1F5FF"
               font-size="11" font-family="Arial,sans-serif">
               4
@@ -218,7 +218,7 @@
         <text x="1149.8" y="81.0"
               text-anchor="middle" fill="#F1F5FF"
               font-size="11" font-family="Arial,sans-serif">
-              45
+              53
         </text>
 
         <text x="1149.8" y="244"
@@ -236,7 +236,7 @@
     <text x="1190" y="76" text-anchor="end"
           fill="#38BDF8" font-size="25"
           font-weight="700" font-family="Arial,sans-serif">
-          52
+          60
     </text>
     
 </svg>
