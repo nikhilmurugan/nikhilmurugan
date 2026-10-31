@@ -1,20 +1,30 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050B1B,35:142B68,70:312E81,100:701A75&height=240&section=header&text=Nikhil%20Murugan%20D%20P&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=SOFTWARE%20ENGINEERING%20%7C%20AI%20%7C%20CLOUD%20%7C%20FULL%20STACK&descSize=14&descAlignY=58&animation=fadeIn" width="100%" alt="Nikhil Murugan D P — Software Engineering, AI, Cloud and Full Stack"/>
+<img src="assets/header.svg" width="100%" alt="Nikhil Murugan D P — Software Engineering, AI, Cloud and Full Stack"/>
 
 <br/>
 
-<a href="https://portfolio-nikhil-two.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<a href="https://www.linkedin.com/in/nikhil-murugan-d-p-934b3a3ab"><img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a>
-<a href="https://leetcode.com/u/Nikhil_-24/"><img src="https://img.shields.io/badge/LEETCODE-111827?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a>
-<a href="https://www.kaggle.com/nikhilmurugandp"><img src="https://img.shields.io/badge/KAGGLE-111827?style=for-the-badge&logo=kaggle&logoColor=20BEFF" alt="Kaggle"/></a>
+<a href="https://portfolio-nikhil-two.vercel.app/">
+<img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+</a>
+<a href="https://www.linkedin.com/in/nikhil-murugan-d-p-934b3a3ab">
+<img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/>
+</a>
+<a href="https://leetcode.com/u/Nikhil_-24/">
+<img src="https://img.shields.io/badge/LEETCODE-111827?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/>
+</a>
+<a href="https://www.kaggle.com/nikhilmurugandp">
+<img src="https://img.shields.io/badge/KAGGLE-111827?style=for-the-badge&logo=kaggle&logoColor=20BEFF" alt="Kaggle"/>
+</a>
 
 </div>
 
+---
+
 ## 👨‍💻 About Me
 
-MCA student at **VIT Vellore**, interested in software engineering, artificial intelligence, cloud computing, and full-stack application development. I enjoy building practical applications, exploring emerging technologies, and solving problems through code.
+MCA student at **VIT Vellore**, passionate about software engineering, artificial intelligence, cloud technologies, and full-stack development. I enjoy designing and building practical applications, exploring emerging technologies, and transforming ideas into functional software solutions.
 
 ## ⚙️ Technical Expertise
 
@@ -38,9 +48,9 @@ MCA student at **VIT Vellore**, interested in software engineering, artificial i
 ![React](https://img.shields.io/badge/React-111827?style=flat-square&logo=react&logoColor=61DAFB)
 ![Angular](https://img.shields.io/badge/Angular-111827?style=flat-square&logo=angular&logoColor=DD0031)
 ![Node.js](https://img.shields.io/badge/Node.js-111827?style=flat-square&logo=nodedotjs&logoColor=5FA04E)
-![Express](https://img.shields.io/badge/Express.js-111827?style=flat-square&logo=express&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-111827?style=flat-square&logo=html5&logoColor=E34F26)
-![CSS](https://img.shields.io/badge/CSS3-111827?style=flat-square&logo=css3&logoColor=1572B6)
+![Express.js](https://img.shields.io/badge/Express.js-111827?style=flat-square&logo=express&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-111827?style=flat-square&logo=html5&logoColor=E34F26)
+![CSS3](https://img.shields.io/badge/CSS3-111827?style=flat-square&logo=css3&logoColor=1572B6)
 
 </td>
 <td width="50%" valign="top">
@@ -70,6 +80,8 @@ MCA student at **VIT Vellore**, interested in software engineering, artificial i
 </tr>
 </table>
 
+---
+
 ## 📊 GitHub Analytics
 
 <div align="center">
@@ -89,6 +101,8 @@ MCA student at **VIT Vellore**, interested in software engineering, artificial i
 <img src="assets/analytics/activity.svg" width="100%" alt="Monthly Contribution Activity"/>
 
 </div>
+
+---
 
 ## 🚀 Explore My Work
 
